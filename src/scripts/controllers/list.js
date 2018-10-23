@@ -7,6 +7,8 @@
         var pauseDownloadTaskRefresh = false;
         var needRequestWholeInfo = true;
 
+        $scope.baseUrl = localStorage.baseUrl || '/files/';
+
         var refreshDownloadTask = function (silent) {
             if (pauseDownloadTaskRefresh) {
                 return;

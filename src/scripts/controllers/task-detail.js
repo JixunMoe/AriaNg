@@ -15,6 +15,8 @@
             });
         };
 
+        $scope.baseUrl = localStorage.baseUrl || '/files/';
+
         var processTask = function (task) {
             if (!task) {
                 return;
