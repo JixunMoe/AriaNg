@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="styles/controls/angular-promise-buttons.css"/>
     <link rel="stylesheet" href="styles/theme/default.css">
     <!-- endbuild -->
+    <script src="loader.js"></script>
 </head>
 <body class="hold-transition skin-aria-ng sidebar-mini fixed">
 <div class="wrapper" ng-controller="MainController" ng-swipe-left="swipeActions.leftSwipe()" ng-swipe-right="swipeActions.rightSwipe()" ng-swipe-disable-mouse>
@@ -242,6 +243,11 @@
                     <a href="#!/status">
                         <span class="label pull-right" ng-if="globalStatusContext.isEnabled" ng-class="{'label-primary': taskContext.rpcStatus === 'Connecting', 'label-success': taskContext.rpcStatus === 'Connected', 'label-danger': taskContext.rpcStatus === 'Disconnected'}" ng-bind="taskContext.rpcStatus | translate"></span>
                         <i class="fa fa-server"></i> <span translate>Aria2 Status</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/files/">
+                        <i class="fa fa-file"></i> <span>Files</span>
                     </a>
                 </li>
             </ul>
