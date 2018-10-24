@@ -41,7 +41,7 @@
                         <input id="{{'task_' + task.gid}}" type="checkbox" ng-model="taskContext.selected[task.gid]"/>
                         <label for="{{'task_' + task.gid}}">
                             <span class="task-name auto-ellipsis" title="{{task.taskName}}">
-                                <a target="_blank" href="{{ baseUrl + 'task.taskName' }}" ng-bind="task.taskName"></a>
+                                <a target="_blank" href="{{ baseUrl + task.taskName }}" ng-bind="task.taskName"></a>
                             </span>
                         </label>
                     </div>

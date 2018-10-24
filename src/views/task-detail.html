@@ -249,7 +249,7 @@
                                     <input id="{{'file_' + file.index}}" type="checkbox" ng-disabled="!task || !task.files || task.files.length <= 1 || (task.status !== 'waiting' && task.status !== 'paused')"
                                            ng-model="file.selected" ng-change="setSelectedFile(true)"/>
                                     <label for="{{'file_' + file.index}}" class="allow-word-break" title="{{file.fileName}}">
-                                        <a target="_blank" href="{{ baseUrl + 'file.fileName' }}" ng-bind="file.fileName"></a>
+                                        <a target="_blank" href="{{ baseUrl + file.fileName }}" ng-bind="file.fileName"></a>
                                     </label>
                                 </div>
                             </div>
